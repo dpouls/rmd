@@ -1,9 +1,4 @@
-import React, {useEffect} from 'react'
-import { withRouter } from 'react-router-dom'
-import './Gallery.scss'
-import logo from '../../assets/rmd-logo.png';
-import wood2 from '../../assets/wood2.jpg';
-import wood3 from '../../assets/wood3.jpg';
+// import React from 'react';
 import _1 from '../../assets/pieces/1.jpg';
 import _2 from '../../assets/pieces/2.jpg';
 import _3 from '../../assets/pieces/3.jpg';
@@ -29,22 +24,4 @@ import _22 from '../../assets/pieces/22.jpg';
 import _23 from '../../assets/pieces/23.jpg';
 import _24 from '../../assets/pieces/24.jpg';
 import _25 from '../../assets/pieces/25.jpg';
-
-let imageLinks = [_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25];
-
-const Gallery = () => {
-
-    return (
-        <div className='gallery-page'>
-            {imageLinks.map((link,i) => {
-                return(
-                    <div className={`grid-item item-${i}`}>
-                        <img className='grid-img' src={link} alt='display or pedestal'/>
-                    </div>
-                )
-            })}
-        </div>
-    )
-}
-
-export default withRouter(Gallery);
+ imageLinks = [_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25];
